@@ -1,0 +1,4 @@
+databaseChangeLog:
+
+  - include:
+      file: classpath:/database/changelog/scripts/create-user.yaml
