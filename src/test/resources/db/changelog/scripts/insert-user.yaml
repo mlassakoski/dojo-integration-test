@@ -1,0 +1,104 @@
+databaseChangeLog:
+  - changeSet:
+            id: 3
+            author: mlassakoski
+            changes:
+              - insert:
+                  tableName: USER
+                  columns:
+                    - column:
+                       name: ID
+                       value: "1"
+                    - column:
+                       name: NAME
+                       value: "Mauricio"
+                    - column:
+                       name: LAST_NAME
+                       value: "Lassakoski"
+                    - column:
+                       name: EMAIL
+                       value: "mauricio@mail.com"
+                    - column:
+                       name: BIRTH_DATA
+                       value: null
+                    - column:
+                       name: STATUS
+                       value: null
+                    - column:
+                       name: PASSWORD
+                       value: "qwert"
+
+              - insert:
+                  tableName: USER
+                  columns:
+                    - column:
+                       name: ID
+                       value: "2"
+                    - column:
+                       name: NAME
+                       value: "Caroline"
+                    - column:
+                       name: LAST_NAME
+                       value: "Silva"
+                    - column:
+                       name: EMAIL
+                       value: "caroline@mail.com"
+                    - column:
+                       name: BIRTH_DATA
+                       value: null
+                    - column:
+                       name: STATUS
+                       value: null
+                    - column:
+                       name: PASSWORD
+                       value: "qwert"
+
+              - insert:
+                  tableName: USER
+                  columns:
+                    - column:
+                       name: ID
+                       value: "3"
+                    - column:
+                       name: NAME
+                       value: "Jose"
+                    - column:
+                       name: LAST_NAME
+                       value: "Rosa"
+                    - column:
+                       name: EMAIL
+                       value: "jose@mail.com"
+                    - column:
+                       name: BIRTH_DATA
+                       value: null
+                    - column:
+                       name: STATUS
+                       value: null
+                    - column:
+                       name: PASSWORD
+                       value: "qwert"
+
+              - insert:
+                  tableName: USER
+                  columns:
+                    - column:
+                       name: ID
+                       value: "4"
+                    - column:
+                       name: NAME
+                       value: "Brian"
+                    - column:
+                       name: LAST_NAME
+                       value: "Roque"
+                    - column:
+                       name: EMAIL
+                       value: "brian@mail.com"
+                    - column:
+                       name: BIRTH_DATA
+                       value: null
+                    - column:
+                       name: STATUS
+                       value: null
+                    - column:
+                       name: PASSWORD
+                       value: "qwert"

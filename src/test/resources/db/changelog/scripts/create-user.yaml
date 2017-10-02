@@ -1,0 +1,42 @@
+
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: mlassakoski
+      changes:
+      - createSequence:
+          sequenceName: SEQ_USER
+
+  - changeSet:
+      id: 2
+      author: mlassakoski
+      changes:
+      - createTable:
+          tableName: USER
+          columns:
+            - column:
+                name: ID
+                type: BIGINT
+                constraints:
+                  - primaryKey: true
+                  - primaryKeyName: USER_PK
+                  - nullable: false
+            - column:
+                name: NAME
+                type: VARCHAR(255)
+            - column:
+                name: LAST_NAME
+                type: VARCHAR(255)
+            - column:
+                name: EMAIL
+                type: VARCHAR(255)
+            - column:
+                name: BIRTH_DATA
+                type: DATE
+            - column:
+                name: STATUS
+                type: BOOLEAN
+            - column:
+                name: PASSWORD
+                type: VARCHAR(255)
