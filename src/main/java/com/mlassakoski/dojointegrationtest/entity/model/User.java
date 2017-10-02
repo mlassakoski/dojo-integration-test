@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.Calendar;
 
-
 @Entity
 @Data
 @Builder

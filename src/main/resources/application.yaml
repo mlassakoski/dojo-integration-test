@@ -2,33 +2,22 @@ server:
   port: 8081
 
 spring:
-  application.type: dojo-integration-test
   profiles.active: local
 
-logging.level:
-  root: INFO
-  com.mlassakoski.dojointegrationtest: DEBUG
-  org.hibernate.orm.deprecation: ERROR
+liquibase:
+  change-log: classpath:/database/changelog/db.changelog-master.yaml
+  enabled: true
+  drop-first: true
+  contexts: local
 
-liquibase.change-log: classpath:/database/changelog/db.changelog-master.yaml
 ---
 
 spring:
   profiles: local
   datasource:
-  driver: org.h2.Driver
-#    url: jdbc:h2:mem:test
+    driver: org.h2.Driver
     url: jdbc:h2:~/testdb
     username: sa
     password:
   jpa:
     show-sql: true
-  logging.level:
-    org.hibernate.tool.hbm2ddl: DEBUG
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type: TRACE
-
-liquibase:
-  enabled: true
-  drop-first: true
-  contexts: local
