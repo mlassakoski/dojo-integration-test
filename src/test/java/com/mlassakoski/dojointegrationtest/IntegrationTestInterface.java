@@ -12,7 +12,7 @@ import java.lang.annotation.*;
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.ANNOTATION_TYPE})
+@Target({ElementType.TYPE, ElementType.METHOD, ElementType.ANNOTATION_TYPE})
 @Inherited
 @SpringBootTest
 @TestPropertySource(locations = "classpath:application-integration-test.yaml")
